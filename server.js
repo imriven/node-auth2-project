@@ -6,8 +6,6 @@ const server = express();
 
 server.use(express.json());
 
-
-
 server.use('/api', ApiRouter);
 
 

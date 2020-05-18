@@ -4,8 +4,8 @@ const config = require("../knexfile.js");
 
 const db = knex(config.development);
 
-function add(credentials) {
-   return db("users").insert(credentials)
+function add(user) {
+   return db("users").insert(user)
 }
 
 function get() {
