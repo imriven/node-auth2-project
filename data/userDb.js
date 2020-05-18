@@ -20,12 +20,15 @@ function getByUsername(username) {
     return db("users").where({username}).first()
 }
 
-
+function getByDepartment(department) {
+    return db("users").where({department})
+}
 
 
 module.exports = {
   get,
   add,
   getById,
-  getByUsername
+  getByUsername,
+  getByDepartment
 };
